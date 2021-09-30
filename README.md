@@ -1,6 +1,4 @@
 
-Task3:
-=======
 ## Lab 2 : CEG 3400
 
 ### Authentication and Permissions
@@ -8,8 +6,8 @@ Task3:
 #### Name: <yourname>
 
 Names of teammates:
-* <teammate 1>
-* <teammate 2>
+* <Grant Treadway>
+* <G Loranger>
 
 ---
 
@@ -41,17 +39,32 @@ Names of teammates:
 
 * What were the permissions on each of the users' home directories?
   ```
-  command and output
+  ls -lah /home
+    total 24K
+    drwxr-xr-x  6 root     root     4.0K Sep 23 03:01 .
+    drwxr-xr-x 23 root     root     4.0K Sep 23 00:48 ..
+    drwxr-xr-x  2 grant    grant    4.0K Sep 23 02:47 grant
+    drwxr-xr-x  2 jiaran   jiaran   4.0K Sep 23 03:01 jiaran
+    drwxr-xr-x  2 loranger loranger 4.0K Sep 23 02:54 loranger
+    drwxr-xr-x 11 ubuntu   ubuntu   4.0K Sep 23 03:21 ubuntu
+
   ```
 * What command did you use to change the permissions?
   ```
-  command
+  sudo chmod 770 jiaran
+  sudo chmod 770 grant
+  sudo chmod 770 loranger
+
   ```
 * What are the permissions on `/etc/shadow`?
   ```
-  command and output
+  ls -lh /etc/shadow
+    -rw-r----- 1 root shadow 1.3K Sep 23 03:02 /etc/shadow
   ```
 * Why does `/etc/shadow` have the permissions that it does?
+
+  Because it's a root file that store the passwd info about users. So only user can read and write. Group can read only. Others don't have any access permission.
+
 * How did you accomplish this task?  IF you updated any of the files above
   (`/etc/passwd` or `/etc/group`) paste the relevant lines here.  
   ```
@@ -94,5 +107,4 @@ Names of teammates:
   and the input `shadowfile`.  Were there any duplicate passwords?
   Did they have the same hashes in the shadowfile?  Was one wordlist more
   effective than the others?
->>>>>>> 29bb11d7a13c5fe418e0931f6a3eb63881641b90
 

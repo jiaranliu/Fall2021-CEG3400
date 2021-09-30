@@ -69,23 +69,25 @@ Names of teammates:
   (`/etc/passwd` or `/etc/group`) paste the relevant lines here.  
   ```
    ls -lah /home
-total 24K
-drwxr-xr-x  6 root     root     4.0K Sep 23 03:01 .
-drwxr-xr-x 23 root     root     4.0K Sep 23 00:48 ..
-drwxrwx---  2 grant    grant    4.0K Sep 23 02:47 grant
-drwxrwx---  2 jiaran   jiaran   4.0K Sep 23 03:01 jiaran
-drwxrwx---  2 loranger loranger 4.0K Sep 23 02:54 loranger
-drwxr-xr-x 12 ubuntu   ubuntu   4.0K Sep 30 22:49 ubuntu
+   total 24K
+     drwxr-xr-x  6 root     root     4.0K Sep 23 03:01 .
+     drwxr-xr-x 23 root     root     4.0K Sep 23 00:48 ..
+     drwxrwx---  2 grant    grant    4.0K Sep 23 02:47 grant
+     drwxrwx---  2 jiaran   jiaran   4.0K Sep 23 03:01 jiaran
+     drwxrwx---  2 loranger loranger 4.0K Sep 23 02:54 loranger
+     drwxr-xr-x 12 ubuntu   ubuntu   4.0K Sep 30 22:49 ubuntu
    
    cat /etc/group
-sudo:x:27:ubuntu,grant,jiaran,loranger
+     sudo:x:27:ubuntu,grant,jiaran,loranger
 
-I accomplish this task by adding the users to the sudo group. 
-sudo usermod -aG sudo jiaran
-sudo usermod -aG sudo grant
-sudo usermod -aG sudo loranger
-As the output of cat /etc/group. They are all sudoers, so they can access other users' files.
+     I accomplish this task by adding the users to the sudo group. 
+     sudo usermod -aG sudo jiaran
+     sudo usermod -aG sudo grant
+     sudo usermod -aG sudo loranger
+     As the output of cat /etc/group. They are all sudoers, so they can access other users' files.
+
   ```
+
   Be thorough in your response, explain how given the above output and 
   a listing of commands run I can know for certain that your user can 
   access other users' files.

@@ -3,11 +3,11 @@
 
 ### Authentication and Permissions
 
-#### Name: <yourname>
+#### Name: Jiaran Liu
 
 Names of teammates:
-* <Grant Treadway>
-* <G Loranger>
+* GrantTreadway
+* G Loranger
 
 ---
 

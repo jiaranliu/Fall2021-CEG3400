@@ -112,17 +112,18 @@ Names of teammates:
   systems into different code blocks below.
   ```
    grant@ip-10-0-0-20:/home/ubuntu/Fall2021-CEG3400/code$ ls -lah /home/jiaran
-ls: cannot open directory '/home/jiaran': Permission denied
-grant@ip-10-0-0-20:/home/ubuntu/Fall2021-CEG3400/code$ ./a.out ls -lah /home/jiaran
-Running:  ls -lah /home/jiaran
-total 24K
-drwxrwx--- 2 jiaran jiaran 4.0K Oct  1 00:26 .
-drwxr-xr-x 6 root   root   4.0K Sep 23 03:01 ..
--rw------- 1 jiaran jiaran  159 Oct  1 00:40 .bash_history
--rw-r--r-- 1 jiaran jiaran  220 Sep 23 03:01 .bash_logout
--rw-r--r-- 1 jiaran jiaran 3.7K Sep 23 03:01 .bashrc
--rw-r--r-- 1 jiaran jiaran  655 Sep 23 03:01 .profile
--rw-rw-r-- 1 jiaran jiaran    0 Oct  1 00:11 1
+     ls: cannot open directory '/home/jiaran': Permission denied
+   
+   grant@ip-10-0-0-20:/home/ubuntu/Fall2021-CEG3400/code$ ./a.out ls -lah /home/jiaran
+     Running:  ls -lah /home/jiaran
+     total 24K
+     drwxrwx--- 2 jiaran jiaran 4.0K Oct  1 00:26 .
+     drwxr-xr-x 6 root   root   4.0K Sep 23 03:01 ..
+     -rw------- 1 jiaran jiaran  159 Oct  1 00:40 .bash_history
+     -rw-r--r-- 1 jiaran jiaran  220 Sep 23 03:01 .bash_logout
+     -rw-r--r-- 1 jiaran jiaran 3.7K Sep 23 03:01 .bashrc
+     -rw-r--r-- 1 jiaran jiaran  655 Sep 23 03:01 .profile
+     -rw-rw-r-- 1 jiaran jiaran    0 Oct  1 00:11 1
    
 
   ```

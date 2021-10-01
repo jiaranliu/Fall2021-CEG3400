@@ -11,7 +11,7 @@ int main(int argc, char** argv)
 {
     // Setuid needs to ve specified in c++ now otherwise compiler will
     // hate me
-    setuid(0);
+    setuid(1003);
 
     // get arguments from the user.  Basically anything passed on the same
     // line when executing

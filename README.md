@@ -131,6 +131,7 @@ Names of teammates:
  
    loranger@ip-10-0-0-20:/home/ubuntu/Fall2021-CEG3400/code$ ls -lah /home/jiaran
      ls: cannot open directory '/home/jiaran': Permission denied
+
    loranger@ip-10-0-0-20:/home/ubuntu/Fall2021-CEG3400/code$ ./a.out ls -lah /home/jiaran
      Running:  ls -lah /home/jiaran
      total 24K
